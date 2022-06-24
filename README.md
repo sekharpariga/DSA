@@ -5,7 +5,7 @@
 
     Some of the examples of great algorithms are
     
-   - Dijkstra's Algorithm (shortest path find for graphs)
+   - Dijkstra's Algorithm
 
 
 
