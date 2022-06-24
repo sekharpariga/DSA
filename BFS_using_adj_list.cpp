@@ -1,16 +1,16 @@
 #include <iostream>
 #include <list>
 #include <vector>
-
 using namespace std;
 
 class Graph
 {
 	int v;
-	vector<list<int>> adj;
+	vector< list<int> > adj;
 
 	public:
 		Graph(int size);
+		~Graph();
 		void addEdge(int vx1, int vx2);
 		void BFS(int vertex);
 };
@@ -19,6 +19,14 @@ Graph::Graph(int size)
 {
 	v = size;
 	adj.resize(v);
+}
+
+Graph::~Graph()
+{
+	cout << "clearing all the adj doubly linked list" << endl;
+
+	for(auto it = adj.begin(); it != adj.end(); it++)
+		it->clear();
 }
 
 void Graph::addEdge(int vx1, int vx2)
@@ -30,54 +38,50 @@ void Graph::BFS(int vertex)
 {
 	vector<bool> visited;
 	visited.resize(v, false);
-	list<int> queue;
 
-	queue.push_back(vertex);
+	list<int> queue;
 	visited[vertex] = true;
+	queue.push_back(vertex);
 
 	while(!queue.empty())
 	{
 		int cv = queue.front();
 		queue.pop_front();
-		cout << "current vertex: " << cv << "\n";
+
+		cout << cv << "\t";
 
 		for(auto adjacent : adj[cv])
 		{
-			visited[adjacent] = true;
-			queue.push_back(adjacent);
-			cout << cv << " -> " << endl;
+			if(!visited[adjacent])
+			{
+				visited[adjacent] = true;
+				queue.push_back(adjacent);
+			}
 		}
-
 	}
 }
 
 
 int main()
 {
-	Graph gp(6);
+	int size = 0;
 
-	gp.addEdge(1, 4);
-	gp.addEdge(1, 6);
-	gp.addEdge(1, 3);
-	gp.addEdge(2, 6);
-	gp.addEdge(2, 3);
-	gp.addEdge(2, 5);
-	gp.addEdge(3, 1);
-	gp.addEdge(3, 2);
-	gp.addEdge(3, 4);
-	gp.addEdge(3, 5);
-	gp.addEdge(4, 6);
-	gp.addEdge(4, 5);
-	gp.addEdge(4, 3);
-	gp.addEdge(4, 2);
-	gp.addEdge(4, 1);
-	gp.addEdge(5, 4);
-	gp.addEdge(5, 6);
-	gp.addEdge(5, 2);
-	gp.addEdge(6, 4);
-	gp.addEdge(6, 5);
+	cout << "enter the number of vertecies: ";
+	cin >> size;
 
-	gp.BFS(1);
+	Graph *gp = new Graph(size);
+	
+	for(int i = 0; i < size; i++)
+	{
+		cout << "adding " << i+1 << " edge\n";
+		int v1, v2;
+		cin >> v1 >> v2;
+		gp->addEdge(v1, v2);
+	}
+	int startVx = 0;
+	cout << "enter starting vertex with which BFS should run from: ";
+	cin >> startVx;
+	gp->BFS(startVx);
 
 	return 0;
 }
