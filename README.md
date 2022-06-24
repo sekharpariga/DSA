@@ -1,7 +1,7 @@
 # Mission
 
 
-    To study and document all the great algorithms out there in the computer and programming worlds.
+    To study and document all the great algorithms.
 
 
 #### List of Algorithms that are in focus:
@@ -25,7 +25,7 @@
 
 
 
-## Languages
+### Programming Languages
 
  - C
  - C++11
