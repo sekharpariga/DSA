@@ -8,7 +8,7 @@ Some of the examples of great algorithms are
 
 ## Languages
 
+ - C
  - C++11
  - C++20
- - C
  - Golang
