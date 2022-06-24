@@ -2,7 +2,21 @@ Misson:
 
 	To study and document all the great algorithms out there in the computer and programming world.
 	some of the examples of great algorithms are
-		1. Dijkstra's Algorithm (shortest path find for graphs)
+		1. Dijkstra's
+		2. Boyer-Moore Mejority Voting
+		3. Euclid's
+		4. KMP
+		5. Kruskal's
+		6. Floyd's Cycle Deteciton
+		7. Kadane's
+		8. Bellman Ford's
+		9. Kahn's Topological
+		10. Huffman coding compression
+		11. Lee
+		12. Flood Fill
+		13. Topological sort
+		14. Quick Select
+		15. Binary Search
 
 
 
