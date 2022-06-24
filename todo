@@ -1,0 +1,33 @@
+Misson:
+
+	To study and document all the great algorithms out there in the computer and programming world.
+	some of the examples of great algorithms are
+		1. Dijkstra's Algorithm (shortest path find for graphs)
+
+
+
+Pending:
+
+ 1. Add CMakeLists.txt file
+ 2. Setup gihub commit actions
+ 3. DFS
+ 4. Digits DP
+ 5. Spanning tree
+ 6. 
+
+
+
+
+Done:
+
+ 1. LRU Cache
+ 2. BFS
+ 3.
+
+
+
+
+
+
+Future:
+ 1. Cryptographic algorithms 
