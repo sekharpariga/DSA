@@ -55,7 +55,7 @@ void Graph::BFS(int vertex)
 
 int main()
 {
-	Graph gp(4);
+	Graph gp(5);
 
 	gp.addEdge(0, 1);
 	gp.addEdge(0, 2);
@@ -63,6 +63,8 @@ int main()
 	gp.addEdge(2, 3);
 	gp.addEdge(3, 2);
 	gp.addEdge(3, 0);
+	gp.addEdge(3, 4);
+	gp.addEdge(4, 0);
 
 	gp.BFS(0);
 	return 0;
