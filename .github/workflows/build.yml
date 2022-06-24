@@ -13,4 +13,4 @@ jobs:
           cd build && make
       - name: run executable
         run: |
-          ./build/tesing
+          build/tesing
