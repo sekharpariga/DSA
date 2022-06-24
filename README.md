@@ -5,7 +5,21 @@
 
     Some of the examples of great algorithms are
     
-   - Dijkstra's Algorithm
+   	- Dijkstra's
+	- Boyer-Moore Mejority Voting
+	- Euclid's
+	- KMP
+	- Kruskal's
+	- Floyd's Cycle Deteciton
+	- Kadane's
+	- Bellman Ford's
+	- Kahn's Topological
+	- Huffman coding compression
+	- Lee
+	- Flood Fill
+	- Topological sort
+	- Quick Select
+	- Binary Search
 
 
 
