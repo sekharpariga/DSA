@@ -39,12 +39,12 @@ void Graph::BFS(int vertex)
 	{
 		int cv = queue.front();
 		queue.pop_front();
-		cout << "current vertex visits :" << cv << endl;
+		cout << "current vertex: " << cv << "\n";
 
-		for(auto value : adj[cv])
+		for(auto adjacent : adj[cv])
 		{
-			visited[value] = true;
-			queue.push_back(value);
+			visited[adjacent] = true;
+			queue.push_back(adjacent);
 			cout << cv << " -> " << endl;
 		}
 
