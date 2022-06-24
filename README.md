@@ -1,8 +1,8 @@
 # Mission
 
-&emspTo study and document all the great algorithms out there in the computer and programming world.
-&emspsome of the examples of great algorithms are
-&emsp&emsp 1. Dijkstra's Algorithm (shortest path find for graphs)
+&emsp To study and document all the great algorithms out there in the computer and programming world.
+&emsp some of the examples of great algorithms are
+&emsp &emsp 1. Dijkstra's Algorithm (shortest path find for graphs)
     
 
 # Languages
