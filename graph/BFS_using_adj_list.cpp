@@ -10,7 +10,6 @@ class Graph
 
 	public:
 		Graph(int size);
-		~Graph();
 		void addEdge(int vx1, int vx2);
 		void BFS(int vertex);
 };
@@ -19,14 +18,6 @@ Graph::Graph(int size)
 {
 	v = size;
 	adj.resize(v);
-}
-
-Graph::~Graph()
-{
-	cout << "clearing all the adj doubly linked list" << endl;
-
-	for(auto it = adj.begin(); it != adj.end(); it++)
-		it->clear();
 }
 
 void Graph::addEdge(int vx1, int vx2)
@@ -64,25 +55,16 @@ void Graph::BFS(int vertex)
 
 int main()
 {
-	int size = 0;
+	Graph gp(4);
 
-	cout << "enter the number of vertecies: ";
-	cin >> size;
+	gp.addEdge(0, 1);
+	gp.addEdge(0, 2);
+	gp.addEdge(1, 2);
+	gp.addEdge(2, 3);
+	gp.addEdge(3, 2);
+	gp.addEdge(3, 0);
 
-	Graph *gp = new Graph(size);
-	
-	for(int i = 0; i < size; i++)
-	{
-		cout << "adding " << i+1 << " edge\n";
-		int v1, v2;
-		cin >> v1 >> v2;
-		gp->addEdge(v1, v2);
-	}
-	int startVx = 0;
-	cout << "enter starting vertex with which BFS should run from: ";
-	cin >> startVx;
-	gp->BFS(startVx);
-
+	gp.BFS(0);
 	return 0;
 }
 
