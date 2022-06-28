@@ -16,7 +16,10 @@ Tips and Tricks for writting better and faster c++ code
     
     e. bit manipulations using bitset
     
-    f. 
+    f. check if a number is power of two
+    
+     bool powerof2(int x)
+        return x && !( x & (x -1) )
 
 2. fast input/output creation
 
