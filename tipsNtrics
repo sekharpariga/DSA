@@ -18,8 +18,10 @@ Tips and Tricks for writting better and faster c++ code
     
     f. check if a number is power of two
     
-     bool powerof2(int x)
-        return x && !( x & (x -1) )
+         bool powerof2(int x)
+            return x && !( x & (x -1) )
+     g. least significant bit of given number  eg. 4 (100) -4 
+        return x & (-x)
 
 2. fast input/output creation
 
