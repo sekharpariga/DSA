@@ -1,5 +1,45 @@
 Tips and Tricks for writting better and faster c++ code
 
-1. fast input/output creation
+1. builtin fuctions
+    __gcd(x, y)  --> return gcd of a, b
+    __builtin_popcount(x)  --> returns number of set bits for x (number of 1's in x)
+    
+    a. use "\n" instead of endl
+    b. use auto key word and range based for loop
+        for(auto v: container)
+            cout << v << "\n";
+            
+    c. calculate number of digits in x
+        floor(log10(x) + 1
+        
+    d. string as stack ( s.push_back() , s.pop_back() ) all this functions are builtin
+    
+    e. bit manipulations using bitset
+    
+    f. 
+
+2. fast input/output creation
+
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
+
+
+3. Assign value by a pair of {} to container 
+
+    braces {} can be used to initialize various containers like pair, vector, deque etc very easily as shown below.
+
+    a.
+    pair<int, int> p;
+
+    Instead of : p = make_pair(3, 4);
+    you can just do this: p = {3, 4};
+
+    b. Initialize a vector as
+    vector<int> v;
+    v = {1, 2, 5, 2};
+
+    c. Initialize a set as
+    set<int> s;
+    s = {4, 6, 2, 7, 4};
+    
+   
