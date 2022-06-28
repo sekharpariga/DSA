@@ -1,0 +1,5 @@
+Tips and Tricks for writting better and faster c++ code
+
+1. fast input/output creation
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
