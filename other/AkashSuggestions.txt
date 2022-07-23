@@ -1,0 +1,23 @@
+1 1 0 1
+1 0 1 1
+1 1 1 0  -- stop 
+1 1 1 1
+
+
+0 --- street light
+1 --- no street light
+
+google maps
+
+no trees from ghr
+
+visualization -->
+tries -- graph data
+
+coocking dish ---> graph
+
+
+graphs
+
+
+-------- hackerrank 2 every problem codechef  ----- 
